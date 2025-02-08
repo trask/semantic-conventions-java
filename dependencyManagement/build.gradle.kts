@@ -13,7 +13,7 @@ val DEPENDENCY_BOMS = listOf(
 )
 
 val DEPENDENCIES = listOf(
-  "io.opentelemetry:opentelemetry-api:1.33.0"
+  "io.opentelemetry:opentelemetry-api:1.46.0"
 )
 
 javaPlatform {

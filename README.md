@@ -1,5 +1,6 @@
 # OpenTelemetry Semantic Conventions for Java
 [![Continuous Build][ci-image]][ci-url]
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftrask%2Fsemantic-conventions-java.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftrask%2Fsemantic-conventions-java?ref=badge_shield)
 
 Java code-generation for the [OpenTelemetry Semantic Conventions](https://github.com/open-telemetry/semantic-conventions).
 
@@ -110,3 +111,7 @@ for code owners.
 [versioning]: https://github.com/open-telemetry/opentelemetry-java/blob/main/VERSIONING.md
 
 TODO(jack-berg): add code coverage badge?
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftrask%2Fsemantic-conventions-java.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftrask%2Fsemantic-conventions-java?ref=badge_large)

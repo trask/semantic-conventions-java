@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "43 6 * * 5" # weekly at 06:43 (UTC) on Friday
+    - cron: "20 9 * * 3" # once a week
   workflow_dispatch:
 
 permissions: read-all
@@ -14,7 +14,6 @@ jobs:
   analysis:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
       # Needed for Code scanning upload
       security-events: write
       # Needed for GitHub OIDC token if publish_results is true

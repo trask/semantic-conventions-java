@@ -8,13 +8,18 @@ on:
     - cron: "43 6 * * 5" # weekly at 06:43 (UTC) on Friday
   workflow_dispatch:
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   analysis:
     runs-on: ubuntu-latest
-    permissions: write-all
-
+    permissions:
+      contents: read
+      # Needed for Code scanning upload
+      security-events: write
+      # Needed for GitHub OIDC token if publish_results is true
+      id-token: write
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:

@@ -13,23 +13,7 @@ permissions: read-all
 jobs:
   analysis:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      # Needed for Code scanning upload
-      security-events: write
-      # Needed for GitHub OIDC token if publish_results is true
-      id-token: write
-
-      actions: read
-      attestations: read
-      checks: read
-      deployments: read
-      issues: read
-      discussions: read
-      packages: read
-      pages: read
-      pull-requests: read
-      statuses: read
+    permissions: write-all
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2

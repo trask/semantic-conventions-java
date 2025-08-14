@@ -33,8 +33,9 @@
         '/^build.gradle.kts$/',
       ],
       matchStrings: [
-        '"(?<depName>otel/weaver):(?<currentValue>[^"]+)"',
+        '"(?<depName>otel/weaver):(?<currentValue>[^@"]+)(?:@sha256:[a-f0-9]+)?"',
       ],
+      pinDigests: true,
     },
   ],
 }

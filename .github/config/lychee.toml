@@ -13,8 +13,7 @@ include_fragments = true
 include = [
   "**/*.md",
   "**/*.java",
-  "**/*.yml",
-  "**/*.yaml"
+  "**/*.yml"
 ]
 
 remap = [

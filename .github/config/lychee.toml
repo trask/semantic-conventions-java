@@ -9,7 +9,15 @@ max_concurrency = 4
 # Check link anchors
 include_fragments = true
 
+remap = [
+  # workaround for https://github.com/lycheeverse/lychee/issues/1729
+  "https://github.com/(.*?)/(.*?)/blob/(.*?)/(.*#.*)$ https://raw.githubusercontent.com/$1/$2/$3/$4",
+  "https://docs.oracle.com/(.*)#.*$ https://docs.oracle.com/$1"
+]
+
 exclude = [
+  # workaround for https://github.com/lycheeverse/lychee/issues/1729
+  '^https://github.com/.*#issuecomment-.*$',
   "^http://localhost:",
   "^http://0.0.0.0:",
 ]

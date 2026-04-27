@@ -4,14 +4,20 @@ This document describes any changes that have been made to the
 settings in this repository outside the settings tracked in the
 private admin repo.
 
-## Secrets and variables > Actions
+## Environments
 
-### Repository secrets
+### `protected` environment
+
+Deployment branches: `main`, `release/*`
+
+Secrets:
 
 - `GPG_PASSWORD` - stored in OpenTelemetry-Java 1Password
 - `GPG_PRIVATE_KEY` - stored in OpenTelemetry-Java 1Password
 - `SONATYPE_KEY` - owned by [@trask](https://github.com/trask)
 - `SONATYPE_USER` - owned by [@trask](https://github.com/trask)
+
+## Secrets and variables > Actions
 
 ### Organization secrets
 
